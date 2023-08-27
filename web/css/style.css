@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(../fonts/proxima_nova.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Proxima Nova';
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    overflow: hidden;
+}
+
+#app {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(324deg, rgba(3, 38, 58, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(3, 38, 58, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(35deg, rgba(3, 38, 58, 0.80) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-enter-active {
+    animation: opacity 0.5s ease forwards;
+}
+
+.fade-leave-active {
+    animation: opacity 0.5s ease forwards reverse;
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(54, 52, 52);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(85, 83, 83);
+    border-radius: 5px;
+}
+
+#job:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,3 @@
+ConfigServer = {}
+
+ConfigServer.DiscordToken = ""
