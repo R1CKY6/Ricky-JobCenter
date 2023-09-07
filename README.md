@@ -20,7 +20,7 @@
 3. Add `ensure Ricky-JobCenter` in your server.cfg
 4. Start the server.
 
-[Forum CFX](https://forum.cfx.re/t/release-free-esx-advanced-dmv-school/5163065)
+[Forum CFX](https://forum.cfx.re/t/release-free-esx-qbcore-advanced-job-center/5163694)
 
 # Support
 For free support join in my discord. [Click Here!](https://discord.gg/tHAbhd94vS)
