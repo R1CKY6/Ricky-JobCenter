@@ -69,7 +69,7 @@ Citizen.CreateThread(function()
       local distance = GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), v.x, v.y, v.z, true)
       if distance < 5.5 then
         sleep = 1
-        ESX.ShowHelpNotification(Config.Lang[Config.Language]["open_menu"])
+        ShowHelpNotification(Config.Lang[Config.Language]["open_menu"])
         if IsControlJustReleased(0, 38) then
           OpenJobCenter()
         end
