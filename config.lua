@@ -9,7 +9,7 @@ Config.Coords = {
     vector3(-266.547, -960.9688, 30.22313)
 }
 
-Config.Language = "en"
+Config.Language = "it"
 
 Config.Lang = {
     ['it'] = {
@@ -29,7 +29,16 @@ Config.Lang = {
         ['center'] = "CENTER",
         ['select'] = "Select",
         ['selected'] = "Selected"
-    }
+    },
+    ['fr'] = {
+        ['open_menu'] = "Appuyez sur ~INPUT_CONTEXT~ pour accéder au ~b~Centre d'emploi",
+        ['select_favourite'] = "Sélectionnez votre favori",
+        ['job'] = "Emploi",
+        ['job2'] = "CENTRE",
+        ['center'] = "EMPLOI",
+        ['select'] = "Sélectionner",
+        ['selected'] = "Sélectionné"
+    },
 }
 
 Config.Jobs = {
@@ -49,3 +58,9 @@ Config.Jobs = {
         description = "Cut the trees and sell the wood",
     }, 
 }
+
+ShowHelpNotification = function(text)
+    BeginTextCommandDisplayHelp("STRING")
+    AddTextComponentSubstringPlayerName(text)
+    EndTextCommandDisplayHelp(0, false, true, -1)
+end
