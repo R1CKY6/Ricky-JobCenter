@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title></title>
+        <title>Tech Development</title>
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link rel="stylesheet" href="./css/style.css">
@@ -13,35 +13,35 @@
                     <div class="h-[1.2%] w-[5.5%] bg-[white] absolute left-[2%] rounded-bl-[10px] rounded-br-[10px]" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"></div>
                     <div class="h-[1.8%] w-[5.5%] bg-[white] rotate-[90deg] absolute right-[-2.5%] rounded-bl-[10px] rounded-br-[10px] bottom-[8.1%]" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);"></div>
 
-                    <div class="text-[80px] text-[#A1A0A0] absolute left-[2%] top-[0.8%]" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">{{this.config.lang.job2}}</div>
-                    <div class="text-[60px] text-[#2578A7] absolute left-[2%] top-[9.8%]" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">{{this.config.lang.center}}</div>
+                    <div class="text-[4.16667vw] text-[#A1A0A0] absolute left-[2%] top-[0.8%]" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">{{this.config.lang.job2}}</div>
+                    <div class="text-[3.125vw] text-[#2578A7] absolute left-[2%] top-[9.8%]" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">{{this.config.lang.center}}</div>
 
                     <div style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);" class="h-[8.1%] w-[20.1%] absolute right-[2%] top-[2.9%] rounded-[50px] bg-[#A1A0A0] cursor-pointer">
                         <div class="h-full w-full flex items-center">
                             <img class="absolute left-[2%] w-auto h-full" :src="avatar" alt="">
-                            <div class="text-[20px] w-full text-[black] absolute left-[28%]">{{name}}</div>
+                            <div class="text-[1.1625vw] w-full text-[black] absolute left-[28%]">{{name}}</div>
                         </div>
                     </div>
 
                     <div class="h-full w-full flex items-center justify-center">
                         <div class="h-[13%] w-[80%] absolute top-[16.5%]">
-                            <div style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);" class="h-full w-full flex justify-center absolute top-[-13%] text-[60px] text-center">{{this.config.lang.select_favourite}}</div>
-                            <div style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);" class="h-full w-full flex justify-center absolute top-[45%] text-[60px] text-center">{{this.config.lang.job}}</div>
+                            <div style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);" class="h-full w-full flex justify-center absolute top-[-13%] text-[3.125vw] text-center">{{this.config.lang.select_favourite}}</div>
+                            <div style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);" class="h-full w-full flex justify-center absolute top-[45%] text-[3.125vw] text-center">{{this.config.lang.job}}</div>
                         </div>
                     </div>
                     <div class="absolute h-[61.5%] left-[17%] top-[34.7%] w-[66%] flex overflow-x-auto">
                         <div v-for="v in jobs" id="job" class="h-[99%] min-w-[28.1%] mr-[7.5%] rounded-[10px] border-[2px] border-[#464646]" style="background: linear-gradient(180deg, #312E2E 0%, rgba(33, 31, 31, 0.79) 100%);">
                             <div class="h-full w-full flex justify-center">
-                                <div class="absolute top-[2%] text-[30px]">{{v.label}}</div>
+                                <div class="absolute top-[2%] text-[1.5625vw]">{{v.label}}</div>
                                 <div class="absolute top-[8%] h-[50%] w-[28%] flex justify-center">
-                                    <div class="text-[#A1A0A0] text-[17px] text-center top-[5%] absolute">{{v.description}}</div>
+                                    <div class="text-[#A1A0A0] text-[1.04167vw] text-center top-[5%] absolute">{{v.description}}</div>
                                 </div>
                             </div>
                             <div class="h-full w-full flex justify-center">
                                 <div @click="changeJob(v.id)" class="absolute bottom-[25.5%] bg-[#d8d8d80d] h-[9.5%] w-[16.2%] duration-[1s] rounded-[10px] borded-[1px] border-[#464646] cursor-pointer hover:bg-[#d8d8d829]">
                                     <div class="h-full w-full flex items-center justify-center">
                                         <transition name="fade" mode="out-in">
-                                            <span :key="textKey" class="text-[20px] duration-[1s]">{{getSelected(v.id)}}</span>
+                                            <span :key="textKey" class="text-[1.04167vw] duration-[1s]">{{getSelected(v.id)}}</span>
                                         </transition>
                                     </div>
                                 </div>
