@@ -15,7 +15,9 @@ const app = new Vue({
 
         avatar : false,
 
-        config : []
+        config : {
+            lang : {}
+        }
     },
 
     methods: {
